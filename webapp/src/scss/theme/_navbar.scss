@@ -1,0 +1,16 @@
+/*
+* ===================================================
+*     Navbar
+* ===================================================
+*/
+
+// Absolutely position header, used on the homepage
+// w/ the image background behind it
+.header-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: $zindex-fixed;
+}
