@@ -1,4 +1,5 @@
-import "../scss/style.default.scss"
+import "../fonts/stylesheet.css"
+import "../scss/theme.scss"
 import Layout from "../components/Layout"
 
 const App = ({ Component, pageProps }) => {

@@ -1,6 +1,9 @@
 import React from "react"
 import Link from "next/link"
 
+import Products from "../components/Products"
+import products from "../data/products.json"
+
 export async function getStaticProps() {
     return {
       props: {
@@ -24,6 +27,7 @@ const Index = () => {
                     <a>this page!</a>
                 </Link>
             </h5>
+            <Products fluid products={products}/>
         </React.Fragment>
     )
 }

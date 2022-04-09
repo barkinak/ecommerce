@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Cool Wireless Headphone",
+        "link": "/home",
+        "category": [
+            "Headphones"
+        ],
+        "img": {
+            "detail": [
+                {
+                    "img": "/img/product/1.jpg",
+                    "caption": "Headphone caption",
+                    "alt": "Headphone"
+                }
+            ]
+        },
+        "price": 200,
+        "stars": 5
+    },
+    {
+        "name": "Smart TV LED 49inch Ultra HD",
+        "link": "/home",
+        "category": [
+            "TV, Video & Audio"
+        ],
+        "img": {
+            "detail": [
+                {
+                    "img": "/img/product/2.jpg",
+                    "caption": "Smart TV caption",
+                    "alt": "Smart TV"
+                }
+            ]
+        },
+        "price": 500,
+        "stars": 4
+    },
+    {
+        "name": "Smart Speaker with Voice Control",
+        "link": "/home",
+        "category": [
+            "Smart Home"
+        ],
+        "img": {
+            "detail": [
+                {
+                    "img": "/img/product/3.jpg",
+                    "caption": "Smart Speaker caption",
+                    "alt": "Smart Speaker"
+                }
+            ]
+        },
+        "price": 30,
+        "stars": 5
+    },
+    {
+        "name": "Popular Smartphone 128GB",
+        "link": "/home",
+        "category": [
+            "Smartphones"
+        ],
+        "img": {
+            "detail": [
+                {
+                    "img": "/img/product/4.jpg",
+                    "caption": "Smartphone caption",
+                    "alt": "Smartphone"
+                }
+            ]
+        },
+        "price": 960,
+        "stars": 5
+    },
+    {
+        "name": "Fancy Watch Series 5, Aluminium",
+        "link": "/home",
+        "category": [
+            "Wearable Electronics"
+        ],
+        "img": {
+            "detail": [
+                {
+                    "img": "/img/product/5.jpg",
+                    "caption": "Smart Watch caption",
+                    "alt": "Smart Watch"
+                }
+            ]
+        },
+        "price": 349.99,
+        "stars": 3.5
+    },
+    {
+        "name": "Weird Laptop",
+        "link": "/home",
+        "category": [
+            "Computers"
+        ],
+        "img": {
+            "detail": [
+                {
+                    "img": "/img/product/6.jpg",
+                    "caption": "Smart TV caption",
+                    "alt": "Smart TV"
+                }
+            ]
+        },
+        "price": 450,
+        "stars": 2.5
+    }
+]
