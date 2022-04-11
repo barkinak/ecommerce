@@ -21,13 +21,9 @@ const Index = () => {
     console.log('Index');
     return (
         <React.Fragment>
-            <h5 className="title">
-                Read{' '}
-                <Link href="/test-next">
-                    <a>this page!</a>
-                </Link>
-            </h5>
+          <main className="page-wrapper">
             <Products fluid products={products}/>
+          </main>
         </React.Fragment>
     )
 }

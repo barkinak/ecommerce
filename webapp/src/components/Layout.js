@@ -4,7 +4,7 @@ import Head from "next/head"
 import SSRProvider from "react-bootstrap/SSRProvider"
 import { CartProvider } from "../contexts/CartContext"
 import { WishlistProvider } from "../contexts/WishlistContext"
-import NavbarComponent from "./bootstrap/Navbar"
+import NavbarComponent from "./NavbarComponent"
 
 const Layout = (pageProps) => {
   console.log('Layout');
@@ -14,7 +14,12 @@ const Layout = (pageProps) => {
         <link rel="icon" href="/favicon.png" />
         <title>{pageProps.title}</title>
       </Head>
-      <main>{pageProps.children}</main>
+      <CartProvider>
+        <WishlistProvider>
+          <NavbarComponent></NavbarComponent>
+          <main>{pageProps.children}</main>
+        </WishlistProvider>
+      </CartProvider>
     </SSRProvider>
   )
 }

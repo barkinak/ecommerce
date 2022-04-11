@@ -9,31 +9,14 @@ const reducer = (state, action) => {
   console.log('Cart context reducer');
   console.log(`state: ${JSON.stringify(state)}`);
   console.log(`action: ${JSON.stringify(action)}`);
-  // Assign quantity to product if new
-  const finalProduct = action.quantity
-    ? Object.assign(action.payload, { quantity: parseInt(action.quantity, 10) })
-    : action.payload
-
-    console.log(`finalProduct: ${finalProduct}`);
-  
-  // Assign quantity to product if exists in cart
-  state.forEach((item) => {
-    console.log(`item: ${item.slug}`);
-
-    if (item.slug === action.payload.slug) {
-      item.quantity = parseInt(action.quantity, 10)
-    }
-  })
 
   switch (action.type) {
     case "reset":
       return initialState // Reset cart
     case "add":
-      return !state.some((item) => item.slug === finalProduct.slug)
-        ? [...state, finalProduct]
-        : [...state] // If product not in cart add else return cart
+      return [...state, action.payload]
     case "remove":
-      return state.filter((x) => finalProduct.slug !== x.slug) // Remove item from cart
+      return state.filter((x) => x.name !== action.payload.name) // Remove item from cart
   }
 }
 
